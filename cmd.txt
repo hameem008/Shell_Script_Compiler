@@ -1,0 +1,20 @@
+cat /etc/passwd | grep /bin/bash | cut -d: -f1
+dmesg | grep -i error | sort | uniq
+ps aux | grep bash | wc -l
+ls -l | grep .c > f1.txt && echo done; sort < f1.txt
+ls > f2.txt
+echo new line >> f3.txt
+clear
+ls not_a_real_folder && echo This won't run; ls > f2.txt
+sleep 30
+yes
+echo "Hello, world!" > out.txt
+echo "Appended line" >> out.txt
+cat < out.txt
+echo "First command" && echo "Second command"
+ls not_a_real_file && echo "You won't see this"
+echo "Hello" ; echo "World"
+cat /etc/passwd | grep '/bin/bash' | cut -d: -f1 > bash_users.txt && echo "Done" ; echo "Finished"
+ls not_a_file && echo "OK" ; echo "Still continues"
+echo -e "one\ntwo\nthree" > words.txt
+grep "two" < words.txt > result.txt
